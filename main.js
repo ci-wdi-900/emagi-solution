@@ -1,10 +1,3 @@
-// order:
-// translateWord
-// encodeWord
-// getCategory
-// search?
-// madlibWord
-
 const emojis = require('./emojis.js');
 const encodeWord = require('./encode-word.js');
 const translateWord = require('./translate-word.js');
@@ -70,10 +63,22 @@ if (command === 'encode') {
 //         break;
 
 //     case 'random':
-//         if (category === undefined) {
+//         if (argument === undefined) {
 //             console.log(randomElement(emojis.emoji));
 //         } else {
-//             console.log(randomElement(emojis[category]));
+//             console.log(randomElement(emojis[argument]));
+//         }
+
+//         break;
+    
+//     case 'search':
+//         const matches = search(argument);
+//         if (matches.length === 0) {
+//             console.log('There was no match.');
+//         } else {
+//             for (const match of matches) {
+//                 console.log(match.symbol);
+//             }
 //         }
 
 //         break;
